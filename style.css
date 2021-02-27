@@ -1,0 +1,132 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  width: 50%;
+  padding: 0 6rem;
+}
+
+.header-text-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(229, 6%, 66%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0 0 1rem 0;
+}
+
+.highlight {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.header-text-sm {
+  color: hsl(229, 6%, 66%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-top: 4px solid;
+  box-shadow: 0px 15px 20px -6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 23rem;
+  height: 15rem;
+  position: relative;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.blue {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.cyan {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.orange {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.feature {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 1rem 0;
+}
+
+.detail {
+  color: hsl(229, 6%, 66%);
+}
+
+.icon {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    padding: 0;
+    width: auto;
+  }
+
+  header {
+    padding: 0 2rem;
+    margin: 4rem 0 4rem 0;
+  }
+
+  .header-text-l {
+    font-size: 22px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
